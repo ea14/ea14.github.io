@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><span class="ea">EA</span><span class="ea14">14</span></a>
+          <a class="navbar-brand" data-loc="hero" href="#"><span class="ea">EA</span><span class="ea14">14</span></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -268,7 +268,7 @@
 
         });
 
-        $('#navbar, #navbar-bottom').on('click', 'li a', function(e) {
+        $('#navbar, #navbar-bottom').on('click', 'a', function(e) {
             e.preventDefault();
             var $clickedAnchor = $(this),
                 $panelToScrollTo = $('#' + $clickedAnchor.data('loc'));
